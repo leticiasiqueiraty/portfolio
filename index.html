@@ -139,11 +139,32 @@ h1 .name {
 }
 
 .hero-desc {
-  color: var(--muted);
-  font-size: 0.95rem;
-  max-width: 40ch;
-  line-height: 1.85;
+  color: var(--text);
+  font-size: 1rem;
+  max-width: 42ch;
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+  font-style: normal;
+}
+.hero-quote {
+  border-left: 3px solid var(--purple);
+  padding: 0.6rem 1rem;
   margin-bottom: 2rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.6;
+  background: rgba(201,168,245,0.05);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-style: italic;
+  max-width: 42ch;
+}
+.hero-quote span {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.68rem;
+  color: var(--purple);
+  font-style: normal;
+  font-weight: 600;
 }
 
 .btn-primary {
@@ -503,15 +524,21 @@ footer {
 <!-- SOBRE -->
 <section id="sobre">
   <div>
-    <div class="hero-tag anim d1">✦ Estudante de ADS · UNIT</div>
-    <h1 class="anim d2">Olá, eu sou<br><span class="name">Leticia<br>Siqueira</span> 💜</h1>
+    <div class="hero-tag anim d1">✦ ADS · UNIT · Aracaju-SE</div>
+    <h1 class="anim d2">Seja<br>bem-vindo(a)<br>ao meu <span class="name">mundo 🐉</span></h1>
     <p class="hero-desc anim d3">
-      Estudante de Análise e Desenvolvimento de Sistemas na Universidade Tiradentes,
-      em Aracaju-SE. Apaixonada por tecnologia e fascinada pelo universo da
-      Inteligência Artificial — criando com código, aprendendo com curiosidade.
+      Sou Leticia Siqueira — estudante de ADS, apaixonada por tecnologia
+      e movida por um propósito: usar a Inteligência Artificial para facilitar
+      a vida das pessoas e criar um impacto real no mundo.
+      Acredito que a tecnologia existe para servir a humanidade —
+      e é isso que quero construir.
     </p>
-    <a href="#portfolio" class="btn-primary anim d4">
-      Ver meus projetos ✨
+    <blockquote class="hero-quote anim d4">
+      "The lords of Westeros are sheep. Are you a sheep? No. You're a dragon. Be a dragon."
+      <span>— Olenna Tyrell, Game of Thrones</span>
+    </blockquote>
+    <a href="#portfolio" class="btn-primary anim d5">
+      Ver meus projetos 🔥
     </a>
   </div>
 
@@ -575,7 +602,7 @@ footer {
       </div>
       <h3>Lista de Tarefas</h3>
       <p>App de to-do list com adição e remoção de tarefas. As tarefas são salvas no localStorage, então continuam lá mesmo depois de fechar o navegador. Foco em manipulação de DOM e persistência de dados.</p>
-      <a href="lista de tarefas/index.html" class="project-link">Ver projeto →</a>
+      <a href="lista-de-tarefas/index.html" class="project-link">Ver projeto →</a>
     </div>
 
     <div class="project-card">
@@ -589,7 +616,7 @@ footer {
       </div>
       <h3>Ímpar ou Par</h3>
       <p>Jogo interativo contra o computador! O usuário escolhe ímpar ou par, digita um número, e o computador gera um número aleatório. A soma decide quem ganhou. Lógica de jogo e validação com JS.</p>
-      <a href="impar ou par/index.html" class="project-link">Ver projeto →</a>
+      <a href="impar-ou-par/index.html" class="project-link">Ver projeto →</a>
     </div>
 
   </div>
